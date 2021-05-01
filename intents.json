@@ -1,6 +1,6 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "greetings", "sup", "yo"],
+         "patterns": ["Hi", "How are you", "Is anyone there", "Hello", "Good day", "Whats up", "Hey", "greetings", "sup"],
          "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
          "context_set": ""
         },
@@ -10,24 +10,34 @@
          "context_set": ""
         },
         {"tag": "age",
-         "patterns": ["how old", "how old is tim", "what is your age", "how old are you", "age?"],
+         "patterns": ["how old", "how old is tim", "what is your age", "how old are you", "age"],
          "responses": ["I am 18 years old!", "18 years young!"],
          "context_set": ""
         },
         {"tag": "name",
-         "patterns": ["what is your name", "what should I call you", "whats your name?", "do you have a name?"],
-         "responses": ["You can call me Tim.", "I'm Tim!", "I'm Tim aka Tech With Tim."],
+         "patterns": ["what is your name", "what should I call you", "whats your name", "do you have a name"],
+         "responses": ["You can call me Chatbot.", "I'm Chatbot!", "My name's Chatbot but my friends call me Chatty."],
          "context_set": ""
         },
         {"tag": "shop",
-         "patterns": ["Id like to buy something", "whats on the menu", "what do you recommend?", "could i get something to eat", "im hungry", "what do you sell?", "what can i buy?"],
+         "patterns": ["I want cookies","what cookies do you sell", "Id like to buy something", "what's on the menu", "what do you recommend", "could i get something to eat", "im hungry", "what do you sell", "what can i buy"],
          "responses": ["We sell chocolate chip cookies for $2!", "Cookies are on the menu!"],
          "context_set": ""
         },
         {"tag": "hours",
-         "patterns": ["when are you guys open", "what are your hours", "hours of operation", "when do you close", "is it too late or early to go", "are you open tomorrow"],
+         "patterns": ["when are you guys open", "what are your hours", "hours of operation", "when do you close", "is it too late or early to go", "are you open tomorrow", "what time do you open", "what time do you close"],
          "responses": ["We are open 7am-4pm Monday-Friday!"],
          "context_set": ""
+        },
+        {"tag": "delivery",
+         "patterns": ["do you deliver", "do you make deliveries", "can you send them to my house", "send them here please", "are you making deliveries", "i'd like to send some cookies"],
+         "responses": ["Sure, call this number and make your delivery!", "We deliver on mondays and wednesdays, call this number!"],
+         "context_set": ""
+        },
+        {"tag": "reservation",
+        "patterns": ["do you have a table", "i'd like to make a reservation", "can i get a table for tonight", "table for two please", "i want to eat there tomorrow", "do you accept reservations"],
+        "responses": ["We'd gladly take your reservation, call this number", "We have tables available! Call this number"],
+        "context_set": ""
         }
    ]
 }
